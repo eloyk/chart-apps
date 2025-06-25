@@ -1,0 +1,4 @@
+apiVersion: v2
+name: generic-app
+version: 0.1.0
+description: Chart base reutilizable para apps del dominio Accounts

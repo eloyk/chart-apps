@@ -1,0 +1,15 @@
+{{- if .Values.configmap.enabled -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "template.fullname" . }}
+  {{- if .Values.namespaceConfig.enabled }}
+  namespace: {{ .Values.namespaceConfig.name }}
+  {{- end }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
+data: 
+  {{- range $name, $config := .Values.configmap.values }}
+  {{ $name }}: {{ $config | quote }}
+  {{- end }}
+{{- end }}

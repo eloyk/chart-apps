@@ -1,0 +1,11 @@
+{{- if .Values.serviceaccount.enabled -}}
+kind: ServiceAccount
+apiVersion: v1
+metadata:
+  name: {{ .Values.serviceaccount.name | default .Release.Name }}
+  {{- if .Values.namespaceConfig.enabled }}
+  namespace: {{ .Values.namespaceConfig.name }}
+  {{- end }}
+imagePullSecrets:
+  - name: regcred
+{{- end -}}
