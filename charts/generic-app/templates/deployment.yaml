@@ -30,10 +30,14 @@ spec:
               protocol: TCP
           resources: 
             {{- toYaml .Values.resources | nindent 12 }}
+          {{- if .Values.env }}
           env:
             {{- toYaml .Values.env | nindent 12 }}
+          {{- end }}
+          {{- if .Values.envFrom }}
           envFrom:
             {{- toYaml .Values.envFrom | nindent 12 }}
+          {{- end }}
           {{- if .Values.extraVolumeMounts }}
           volumeMounts:
             {{- toYaml .Values.extraVolumeMounts | nindent 12 }}
@@ -78,8 +82,10 @@ spec:
       {{- toYaml .Values.labels | nindent 6 }}
   template:
     metadata:
+      {{- if .Values.podAnnotations }}
       annotations:
         {{- toYaml .Values.podAnnotations | nindent 8 }}
+      {{- end }}
       labels:
         {{- toYaml .Values.labels | nindent 8 }}
     spec:
@@ -98,10 +104,14 @@ spec:
               protocol: TCP
           resources: 
             {{- toYaml .Values.resources | nindent 12 }}
+          {{- if .Values.env }}
           env:
             {{- toYaml .Values.env | nindent 12 }}
+          {{- end }}
+          {{- if .Values.envFrom }}
           envFrom:
             {{- toYaml .Values.envFrom | nindent 12 }}
+          {{- end }}
           {{- if .Values.extraVolumeMounts }}
           volumeMounts:
             {{- toYaml .Values.extraVolumeMounts | nindent 12 }}
