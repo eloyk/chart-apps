@@ -82,9 +82,9 @@ persistentVolume:
 #Configuraciones de seguridad
 podSecurityContext: {}
 resources: {}
-securityContext:
-  privileged: false
-  readOnlyRootFilesystem: true
-  allowPrivilegeEscalation: false
-  runAsNonRoot: true
-  runAsUser: 1001
+securityContext: {}
+  # privileged: false
+  # readOnlyRootFilesystem: true
+  # allowPrivilegeEscalation: false
+  # runAsNonRoot: true
+  # runAsUser: 1001
