@@ -79,9 +79,7 @@ spec:
       labels:
         {{- toYaml .Values.labels | nindent 8 }}
     spec:
-      {{- if .Values.serviceaccount.enabled }}
       serviceAccountName: {{ .Values.serviceaccount.name }}
-      {{- end }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
