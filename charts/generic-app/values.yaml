@@ -1,3 +1,5 @@
+kind: deployment
+
 image:
  repository: shashwot/nginx-more
  pullPolicy: Always
