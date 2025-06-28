@@ -2,11 +2,19 @@ apiVersion: v1
 entries:
   generic-app:
   - apiVersion: v2
-    created: "2025-06-28T00:39:46.465633-04:00"
+    created: "2025-06-28T00:50:00.314121-04:00"
     description: Chart base reutilizable para apps del dominio Accounts
-    digest: 7ac825b3b6a3baaf6eaf470972befda4119ac5be280f7e730656fdd4fe79405d
+    digest: 0d6870e666e8060507e61c246f9cf8a6d60637f3121c2c4f0ffcfdee05f0c9a7
     name: generic-app
     urls:
-    - https://eloyk.github.io/chart-apps/public-charts/generic-app-0.1.1.tgz
+    - https://eloyk.github.io/chart-apps/generic-app-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    created: "2025-06-28T00:50:00.313785-04:00"
+    description: Chart base reutilizable para apps del dominio Accounts
+    digest: 0629b52672b4f14108ddae57bb29db0965a911baab2c2287788944b6c17a9b8a
+    name: generic-app
+    urls:
+    - https://eloyk.github.io/chart-apps/generic-app-0.1.1.tgz
     version: 0.1.1
-generated: "2025-06-28T00:39:46.464442-04:00"
+generated: "2025-06-28T00:50:00.312628-04:00"
