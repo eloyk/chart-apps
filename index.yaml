@@ -8,5 +8,5 @@ entries:
     name: generic-app
     urls:
     - https://eloyk.github.io/chart-apps/public-charts/generic-app-0.1.1.tgz
-    version: 0.1.0
+    version: 0.1.1
 generated: "2025-06-28T00:39:46.464442-04:00"
