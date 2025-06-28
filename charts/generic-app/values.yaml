@@ -64,7 +64,7 @@ nameOverride: test2
 selectorLabels: testLabel
 
 namespaceConfig:
-  enabled: true
+  enabled: false
   name: test
 
 container:
