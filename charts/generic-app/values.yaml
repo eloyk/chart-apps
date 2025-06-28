@@ -70,9 +70,9 @@ namespaceConfig:
 container:
   name: test
 
-serviceaccount:
-  enabled: true
-  name: test-sa
+# serviceaccount:
+#   enabled: true
+#   name: test-sa
 
 dockerconfig: test
 
