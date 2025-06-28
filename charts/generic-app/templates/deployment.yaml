@@ -68,7 +68,7 @@ metadata:
   labels:
     app: {{ .Release.Name }}
 spec:
-  replicas: {{ .Values.replicas.replicaCount | default 1 }}
+  replicas: {{ .Values.replicas.replicaCount }}
   selector:
     matchLabels:
       {{- toYaml .Values.labels | nindent 6 }}
