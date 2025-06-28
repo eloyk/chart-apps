@@ -76,9 +76,6 @@ container:
 
 dockerconfig: test
 
-replicas:
-  replicaCount: 1
-
 persistentVolume:
   enabled: false
 
